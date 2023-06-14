@@ -1,53 +1,227 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
 
 body {
-	line-height: 1;
-	width: 100%;
+    line-height: 1;
+    width: 100%;
 }
 
-ol, ul {
-	list-style: none;
+ol,
+ul {
+    list-style: none;
 }
 
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+    quotes: none;
 }
 
-blockquote::before, blockquote::after,
-q::before, q::after {
-	content: '';
-	content: none;
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: "";
+    content: none;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* Do not write a css rule above here! Use the space below  */
 
-
 /* Write your css below here */
+
+.card {
+	height: 350px !important;
+}
+
+.nav-gradient {
+    background: linear-gradient(to right, #09f, white);
+}
+
+.logo-img {
+    height: 50px;
+    width: 100px;
+}
+
+.my-img {
+    border: solid #09f 1px;
+}
+
+a.project-link {
+    color: white;
+    background-color: #09f;
+}
+
+a.link:hover {
+    background-color: #fff;
+    color: #09f;
+}
+
+a.nav-lnk:hover {
+    opacity: 0.3;
+}
+
+main {
+    margin-top: 70px;
+}
+
+img.about-img {
+    height: 16rem;
+    width: 16rem;
+}
+
+#contact {
+    background: linear-gradient(to bottom, white, #99a3b7);
+}
+
+.scale {
+    transition: all 1000ms ease;
+}
+
+.scale:hover {
+    transform: scale(1.1);
+}
+
+.about-img {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slide-left 1s linear forwards;
+}
+
+@keyframes slide-left {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.about-text {
+    opacity: 0;
+    transform: translateX(50px);
+    animation: slide-right 1s linear forwards;
+}
+
+@keyframes slide-right {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media screen and (width < 992px) {
+	.increase-height {
+		height: 510px !important;
+	}
+}
